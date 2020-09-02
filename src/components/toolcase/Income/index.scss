@@ -1,0 +1,9 @@
+//收入管理使用antd的树形表格功能模拟一条数据渲染为多行，但需要隐藏树形控件
+.income-list {
+    .ant-table-row-indent {
+        display: none;
+    }
+    .ant-table-row-expand-icon {
+        display: none;
+    }
+}

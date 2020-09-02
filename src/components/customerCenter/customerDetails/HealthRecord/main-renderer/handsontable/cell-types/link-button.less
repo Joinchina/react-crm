@@ -1,0 +1,19 @@
+@import '~antd/lib/style/themes/default';
+
+.ht-antd-link-button {
+    position: relative;
+
+    a.link-button-btn {
+        display: block;
+        text-align: center;
+        text-decoration: underline;
+        
+        &.link-button-btn-danger {
+            color: @text-color;
+
+            &:hover {
+                color: @error-color;
+            }
+        }
+    }
+}

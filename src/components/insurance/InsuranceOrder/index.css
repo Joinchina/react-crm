@@ -1,0 +1,9 @@
+.insurance_orderList .table-box .ant-table-tbody > tr > td{
+    min-width: 100px;
+}
+.insurance_order_info .table-box .ant-table-tbody > tr > td{
+    min-width: 100px;
+}
+.insurance_order_detail .table-box .ant-table-tbody > tr > td{
+    min-width: 100px;
+}

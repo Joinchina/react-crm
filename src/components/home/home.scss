@@ -1,0 +1,16 @@
+.tasksColBox{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px #e0e0e2;
+}
+.tasksColBox:hover{
+  box-shadow: 0px 0px 30px -10px #1abb9c;
+}
+.tasksColBox .ant-rate {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+
+.statistics-link:hover {
+    color: #1DA57A;
+}

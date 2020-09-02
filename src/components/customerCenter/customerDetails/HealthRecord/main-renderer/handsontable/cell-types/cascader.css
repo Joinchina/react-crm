@@ -1,0 +1,19 @@
+.ht-antd .ant-cascader-picker {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    bottom: 0;
+    right: 0;
+}
+
+.ht-antd .ant-cascader-input {
+    /* box-sizing: border-box; */
+    border-radius: 0;
+    width: 100%;
+    width: calc(100% - 10px);
+    padding: 0 4px;
+}
+
+.ht-antd .ant-cascader-picker-label {
+    padding: 0 5px;
+}

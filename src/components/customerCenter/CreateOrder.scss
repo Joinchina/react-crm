@@ -1,0 +1,178 @@
+#addMedicineRegisterForm {
+    & > .ant-alert {
+        margin-bottom: 10px;
+    }
+
+    tbody.drug-item {
+        border-bottom: solid 1px #e0e0e2;
+
+        &:hover {
+            background-color: #EDF8F5;
+        }
+
+        tr {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: none;
+        }
+
+        tr.drug-alert {
+            height: auto;
+
+            & > td {
+                padding-top: 5px !important;
+                height: auto;
+
+                .ant-form-item {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:last-child > td {
+                padding-top: 0 !important;
+                padding-bottom: 10px !important;
+            }
+        }
+    } 
+    .ant-form-extra{
+        color: red;
+        font-size: 12px;
+    }
+}
+
+.audit-orders{
+    .titleName{ 
+        .dis{
+            margin-right: 27px;
+        }
+    }
+}
+.renderMedicationList{
+    .tip{
+        margin-top: 10px;
+        font-weight: bold;
+        color: red;
+    }
+    margin-bottom: 17px;
+    .useMedication{
+        float: right;
+        padding-right: 80px;
+    }
+    .anticon-check-circle{
+        display: inline;
+    }
+    .anticon-check-circle:before{
+        display: inline;
+    }
+    .anticon{
+        float: right;
+        padding-right: 80px;
+    }
+    a{ 
+        opacity: 1;
+        font-size: 18px; 
+        color: rgba(51,122,183,1); 
+        font-weight: bold
+    }
+    a:hover {
+        color: rgba(51,122,183,1);
+        text-decoration: none;
+    }
+    .ant-alert-info {
+        border: 1px solid #E9EFF4;
+        background-color: #E9EFF4;
+        padding: 21px;
+        margin: unset;
+    }
+    .medication{
+        .titleName{
+            font-weight: bold;
+            color: #707070;
+            width: 120px;
+            font-size: 14px;
+            line-height: 28px; 
+        }
+        .title{ 
+            font-size: 16px;
+            font-family: Microsoft YaHei;
+            color: rgba(51,51,51,1);
+            line-height: 28px; 
+            width: 100%;
+        }
+        td{
+            text-align: left;
+            padding-right: 10px;
+            vertical-align: top;
+        }
+    }
+}
+
+.audit-orders {
+    padding-top: 10px;
+    display: flex;
+    .title{ 
+        display: flex;
+        .titleName{ 
+            text-align: right; 
+            font-weight: bold;
+        }
+        
+    }
+    .drugRegistrationOrders{
+        line-height: 24px;
+        .title{
+            display: inline-block;
+            margin-right: 30px;
+        }
+    }
+    .drugRegistrationDrugs{
+        position: relative;
+        padding-left: 100px;
+        line-height: 24px;
+        .titleName{
+            position: absolute;
+            left: 0px;
+        }
+        .drugs{
+            display: inline-block;
+            margin-right:15px;
+
+            .drugName{
+                color: red;
+                font-size: 15px;
+                font-weight: bold;
+                padding:2px 5px;
+                border-radius: 3px;
+            }
+        }
+    }
+
+}
+.taketime img{
+    display: none
+}
+.show-count{
+    font-weight: 600;
+    color:red;
+    line-height: 36px;
+}
+.explain{
+    margin-bottom: 10px;
+    color: #ffbf00;
+}
+.default{
+    display: inline-block;
+    width: 75px;
+    margin-left: 129px;
+    text-align: center;
+    color: #fff;
+    background: rgb(22, 159, 133);
+    border-radius: 5px; 
+}
+.selected {
+    background: #f2f5f7;
+    font-weight: bold;
+}
+ 

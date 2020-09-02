@@ -1,0 +1,41 @@
+// #app-body .ant-popover-inner-content{
+//   padding:0px;
+// }
+//
+// .search-box .ant-select-selection-selected-value{
+//     height: 36px;
+//     line-height: 36px;
+// }
+
+.global-search {
+
+}
+
+.global-search-dropdown {
+
+    .ant-select-dropdown-menu {
+        max-height: none;
+    }
+
+    .ant-select-dropdown-menu-item {
+        height: 42px;
+        line-height: 42px;
+        padding: 0 8px;
+
+        & > span {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: 10px;
+        }
+
+        &.more {
+            background: #F8F8F8;
+            text-align: center;
+            color: rgba(0,0,0,0.35);
+            cursor: default;
+            font-size: 1.1em;
+        }
+    }
+}

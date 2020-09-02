@@ -1,0 +1,24 @@
+@media print {
+    body > :not(.printable) {
+        display: none !important;
+    }
+
+    body > .printable {
+        display: block;
+    }
+}
+
+@media screen {
+    body > .print-only {
+        display: none;
+    }
+
+    body.print-simulate > :not(.printable) {
+        display: none !important;
+    }
+
+    body.print-simulate > .printable {
+        display: block;
+    }
+}
+

@@ -1,0 +1,83 @@
+@import '~antd/lib/style/themes/default';
+
+.ht-antd-table {
+    overflow: visible !important;
+    
+    textarea.handsontableInput {
+        line-height: 30px;
+    }
+
+    table.htCore > tbody > tr > td {
+        height: 32px;
+        line-height: 30px;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &.ht-antd-cell-with-icon,
+        &.ht-antd-validate-error,
+        &.ht-antd-validate-warning {
+            padding-right: 24px;
+            position: relative;
+
+            .ht-antd-cell-icon {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                visibility: visible;
+                pointer-events: none;
+                width: 24px;
+                height: 20px;
+                line-height: 20px;
+                margin-top: -10px;
+                text-align: center;
+                font-size: 14px;
+                animation: zoomIn 0.3s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+                z-index: 1;
+                color: rgba(0, 0, 0, 0.25);
+
+                &.ht-antd-cell-icon-2 {
+                    right: 18px;
+                }
+            }
+
+            &.ht-antd-2-icons {
+                padding-right: 42px;
+            }
+        }
+
+        &.ht-antd-validate-error {
+            color: @error-color;
+
+            .ht-antd-cell-icon {
+                color: @error-color;
+            }
+        }
+
+        &.ht-antd-validate-warning {
+            color: @text-color;
+
+            .ht-antd-cell-icon {
+                color: @warning-color;
+            }
+        }
+    }
+
+}
+
+.ht-antd {
+    position: absolute;
+    display: none;
+    z-index: 10005;
+}
+
+.ht-antd-fill {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}

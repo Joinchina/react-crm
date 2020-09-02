@@ -1,0 +1,22 @@
+.weixinIcon {
+    & > img {
+        width: 32px;
+        height: 32px;
+        vertical-align: top;
+        margin-right: 8px;
+        border-radius: 3px;
+    }
+    & > span {
+        line-height: 32px;
+        vertical-align: top;
+    }
+    & > button {
+        float: right;
+        margin-top: 5px;
+    }
+    & > .anticon {
+        line-height: 32px;
+        vertical-align: top;
+        margin-right: 8px;
+    }
+}

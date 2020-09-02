@@ -1,0 +1,7 @@
+.table-box tbody .child-table  tr {
+    height: 36px !important;
+}
+
+.wh-table-footer-pagination .child-table .ant-table-body {
+    border-bottom: none;
+}

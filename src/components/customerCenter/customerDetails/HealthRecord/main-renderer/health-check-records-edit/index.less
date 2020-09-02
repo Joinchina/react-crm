@@ -1,0 +1,107 @@
+@import '~antd/lib/style/themes/default';
+@import '../theme.less';
+
+.health-record > .healthcheck-section {
+    .health-check-record-add {
+        height: 36px;
+    }
+
+    .health-check-record-add-row {
+        margin-bottom: 10px;
+    }
+
+    .health-check-record-sticky {
+        background: #f2f2f2;
+        padding: 0 20px 15px 0
+    }
+
+    .health-check-record-scroll-placeholder {
+        height: 1px;
+        margin-left: 20px;
+    }
+
+    .health-check-record-container {
+        position: relative;
+        padding-left: 240px;
+        margin-left: 20px;
+        overflow: hidden;
+
+        td {
+            &.bl-2 {
+                border-left-width: 2px;
+            }
+            &.bt-2 {
+                border-top-width: 2px;
+            }
+            &.bb-2 {
+                border-bottom-width: 2px;
+            }
+            &.br-2 {
+                border-right-width: 2px;
+            }
+            &.ht-antd-validate-warning {
+                background-color: ~`colorPalette("@{warning-color}", 1)`;
+                border-color: ~`colorPalette("@{warning-color}", 3)`;
+            }
+            &.br-warning {
+                border-right-color: ~`colorPalette("@{warning-color}", 3)`;
+            }
+            &.bb-warning {
+                border-bottom-color: ~`colorPalette("@{warning-color}", 3)`;
+            }
+        }
+    
+        .health-check-record-header {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 240px;
+            bottom: 0;
+            z-index: 2;
+    
+            .ht-antd-table table.htCore > tbody > tr > td {
+                line-height: 1.2 !important;
+                padding: 0;
+                background-color: #f2f2f2;
+    
+                &.header-col-group {
+                    text-align: center;
+                    font-weight: bold;
+                    color: @text-color;
+                }
+
+                &.table-header-row {
+                    background-color: @table-header-background-color;
+                    border-color: @table-header-background-color;
+                    color: white;
+                }
+            }
+            
+            .header-cell {
+                max-height: 32px;
+                overflow: hidden;
+                padding: 0 4px;
+            }
+    
+            td[rowspan="6"] .header-cell {
+                max-height: 192px;
+            }
+    
+            td.ht-antd-upload-images .header-cell {
+                max-height: 130px;
+            }
+        }
+    
+        .handsontable.health-check-record-main {
+            position: relative;
+            z-index: 1;
+        }
+    
+        .wtHolder {
+            height: auto !important;
+            overflow: hidden;
+        }
+        
+    }    
+}
+

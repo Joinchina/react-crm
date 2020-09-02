@@ -1,0 +1,114 @@
+.wh-select-with-number {
+    &[disabled] {
+        background: rgb(247, 247, 247);
+        cursor: not-allowed;
+
+        &:hover {
+            border-color: #d9d9d9;
+        }
+    }
+}
+
+.wh-select-with-number-dropdown {
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 250px;
+
+    .ant-dropdown-menu-item {
+        padding: 0;
+
+        & > div {
+            position: relative;
+        }
+
+        &:hover {
+            background-color: transparent;
+        }
+
+        &.ant-dropdown-menu-item-selected:hover {
+            background-color: #edf8f5;
+        }
+
+        .wh-input-number {
+            width: 100px;
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            margin-top: -18px;
+        }
+
+        .wh-select-with-number-item-wrapper{
+            padding: 7px 118px 7px 8px;
+
+            &.disabled {
+                color: rgba(0,0,0,.25);
+                cursor: not-allowed;
+            }
+        }
+
+        .wh-input-number-focused + .wh-select-with-number-item-wrapper {
+            background-color: #edf8f5;
+            color: #1DA57A;
+        }
+    }
+}
+
+.wh-input-number {
+    position: relative;
+    display: inline-block;
+
+    input {
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 24px;
+        background: none;
+        border: 1px solid #d9d9d9;
+        border-top: none;
+        border-bottom: none;
+        outline: none;
+        transition: all .3s;
+        color: rgba(0, 0, 0, 0.65);
+
+        cursor: pointer;
+
+        &.minus {
+            left: 0;
+            border-left: none;
+        }
+
+        &.plus {
+            right: 0;
+            border-right: none;
+        }
+    }
+
+    &:hover {
+
+        button {
+            border-color: #53bb9a;
+            color: #1DA57A;
+        }
+
+        input {
+            border-color: #53bb9a;
+        }
+    }
+
+    input:focus + button, input:focus + button + button {
+        border-color: #53bb9a;
+        color: #1DA57A;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}

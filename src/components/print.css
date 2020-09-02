@@ -1,0 +1,62 @@
+@media print {
+    body {
+        font-size: 1mm !important;
+    }
+    body header {
+        display: none !important;
+    }
+    body nav {
+        display: none !important;
+    }
+    body .userFeed {
+        display: none !important;
+    }
+    body nav + div {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .reservationCenter {
+        font-size: 1mm !important;
+        margin-top: -20px !important;
+        margin-left: -41px !important;
+    }
+    .reservationCenter .wh-form .ant-row {
+        display: none !important;
+    }
+    .reservationCenter .ant-table-pagination {
+        display: none !important;
+    }
+    .reservationCenter .ant-table-expanded-row {
+        display: table-row !important;
+    }
+    .reservationCenter > .ant-table-row-expand-icon {
+        top: 30px !important;
+    }
+    .reservationCenter .ant-table-row-expand-icon-cell, .ant-table-row-expand-icon {
+        z-index:-1 !important;
+    }
+    .reservationCenter .table-box .ant-table-thead > tr > th {
+        font-size: 1mm !important;
+        padding: 0 5px 0 0 !important;
+    }
+    .reservationCenter .table-box .ant-table-tbody > tr > td {
+        font-size: 1mm !important;
+        padding: 2px 2px 2px 0 !important;
+    }
+    .reservationCenter .table-box .ant-table-tbody > tr .singleline:last-child{
+        display: none;
+    }
+    .reservationCenter .table-box .ant-table-thead .singleline:last-child{
+        display: none;
+    }
+    .reservationCenter .child-table {
+        font-size: 1mm !important;
+        margin-top: 10px !important;
+        margin-left: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    .reservationCenter .table-box tbody .child-table tr {
+        font-size: 1mm !important;
+        height: 12px !important;
+    }
+}

@@ -1,0 +1,49 @@
+//分页得样式
+.z_pagination{
+    overflow: hidden;
+    padding: 20px 0;
+    
+    .ant-pagination-item{
+        display: none;
+    }
+    .ant-pagination-jump-next{
+        display: none;
+    }
+    .ant-pagination-jump-prev{
+        display: none;
+    }
+    span{
+        cursor: pointer;
+    }
+}
+//表单得样式
+.z_table{
+    width: 100%;
+    overflow: hidden;
+    
+    .ant-table-body {
+        // border-bottom: solid 1px #2a3f54 ;
+        .ant-table-tbodyead{
+            border-top: solid 1px #2a3f54 ;
+        }
+    }
+    .ant-table-thead > tr > th {
+        padding: 0 20px 0 0;
+        font-weight: bold !important;
+        background-color: #f2f5f7 !important;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.85);
+        padding-left: 20px !important;
+        height: 36px;
+        line-height: 36px;
+        border-bottom: 1px solid #2a3f54;
+    }
+    .ant-table-tbody > tr > td {
+        padding-left: 20px;
+    }
+}
+//表头条件数据
+.z_header{
+    overflow: hidden;
+    background-color: #fff;
+}

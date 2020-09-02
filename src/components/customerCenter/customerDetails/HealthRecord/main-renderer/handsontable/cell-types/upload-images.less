@@ -1,0 +1,134 @@
+@import '~antd/lib/style/themes/default';
+
+.ht-antd-table table.htCore > tbody > tr > td.ht-antd-upload-images {
+    height: 130px;
+    padding: 0;
+}
+
+.ht-antd-upload-images-cell {
+    width: 125px;
+    height: 125px;
+    padding: 2px;
+
+    .ht-antd-upload-images-img {
+        display: block;
+        float: left;
+        width: 55px;
+        height: 55px;
+        margin: 5px 0 0 5px;
+        background-size: cover;
+        position: relative;
+        cursor: zoom-in;
+
+        .ht-antd-upload-images-count {
+            position: absolute;
+            right: 1px;
+            bottom: 1px;
+            width: 20px;
+            height: 20px;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 10px;
+        }
+
+        .ht-antd-upload-images-del {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 22px;
+            height: 22px;
+            background: @error-color;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+
+            & > i {
+                line-height: 22px;
+                vertical-align: top;
+            }
+        }
+
+        &:hover .ht-antd-upload-images-del {
+            display: block;
+        }
+    }
+    
+    .ht-antd-upload-images-loading {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.5);
+        padding: 12.5px 17.5px;
+        box-sizing: border-box;
+    }
+    
+    .ht-antd-upload-images-error {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.5);
+        padding: 12.5px 20.5px;
+        box-sizing: border-box;
+        color: @error-color;
+    }
+    
+    
+    label {
+        display: block;
+        float: left;
+        width: 55px;
+        height: 55px;
+        margin: 5px 0 0 5px;
+        border: 2px dashed;
+        border-color: @normal-color;
+        color: @text-color;
+        overflow: hidden;
+        box-sizing: border-box;
+        position: relative;
+        text-align: center;
+        transition: all .3s @ease-in-out;
+        
+        &:hover {
+            color: @red-6;
+            border-color: @red-6;
+        }
+
+        & > i {
+            line-height: 51px;
+            font-size: 24px !important;
+        }
+        
+        &.only-one {
+            width: 115px;
+            height: 115px;
+
+            & > i {
+                line-height: 111px;
+                font-size: 48px !important;
+            }
+        }
+    }
+    
+    input {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.01;
+        cursor: pointer;
+    }
+}

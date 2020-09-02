@@ -1,0 +1,27 @@
+.ht-antd-popup-text-box {
+    position: absolute;
+    min-width: 300px;
+}
+.ht-antd-popup-text-box.bottomRight {
+    left: -1px;
+    top: -1px;
+}
+.ht-antd-popup-text-box.bottomLeft {
+    right: -1px;
+    top: -1px;
+}
+.ht-antd-popup-text-box > .ant-input {
+    padding: 5px 4px 32px;
+    border-radius: 0;
+    resize: none;
+}
+
+.ht-antd-popup-text-footer {
+    position: absolute;
+    right: -5px;
+    bottom: 4px;
+}
+
+.ht-antd-popup-text-footer > .ant-btn-group > span {
+    margin-right: 8px;
+}

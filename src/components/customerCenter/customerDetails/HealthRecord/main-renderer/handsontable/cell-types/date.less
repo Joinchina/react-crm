@@ -1,0 +1,61 @@
+.ht-antd {
+    .ant-calendar-picker {
+        .ant-calendar-picker-icon {
+            display: none;
+        }
+    }
+    .ant-select-selection__rendered {
+        margin-left: 4px;
+        margin-right: 4px;
+        line-height: 32px;
+    }
+}
+
+.ht-antd-date {
+    .ant-calendar-picker-input {
+        visibility: hidden;
+    }
+    .ant-calendar-picker-clear {
+        display: none;
+    }
+}
+
+.handsontable .ht-antd-datepicker {
+    .ant-calendar-input-wrap {
+        height: 32px;
+        padding: 0 4px;
+        line-height: 30px;
+    }
+
+    tr {
+        &:first-child {
+            td, th {
+                border-top:none;
+            }
+        }
+
+        th {
+            background: none;
+    
+            &:first-child {
+                border-left: none;
+            }
+
+            &:nth-child(2) {
+                border-left: none;
+            }
+
+            &:last-child {
+                border-right: none;
+                border-bottom: none;
+            }
+        }
+
+        td {
+            &:first-of-type {
+                border-left: none;
+            }
+        }
+    }
+    
+}

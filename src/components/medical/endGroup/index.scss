@@ -1,0 +1,30 @@
+.medical_box{
+    overflow: hidden;
+    background-color: #ffffff;
+    .ant-pagination-item{
+        display: none;
+    }
+    .ant-pagination-jump-next{
+        display: none;
+    }
+    .ant-pagination-jump-prev{
+        display: none;
+    }
+    span{
+        cursor: pointer;
+    }
+    .files_box{
+        width: 144px;
+        overflow: hidden;
+        position: relative;
+        input{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            height: 36px;
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+}

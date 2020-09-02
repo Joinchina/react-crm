@@ -1,0 +1,41 @@
+.task-operate-bar {
+
+    .oprow {
+        margin-top: 10px;
+
+        .oplink {
+            color: white;
+            opacity: 0.6;
+            cursor: pointer;
+            text-align: center;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &.left {
+                text-align: left;
+            }
+
+            &.right {
+                text-align: right;
+            }
+        }
+    }
+
+    .opbutton {
+        width: 100%;
+
+        & > button:first-child {
+            width: 80%;
+        }
+        & > button:last-child {
+
+            .anticon.anticon-down::before {
+                content: "\E647"; // force set to anticon-ellipsis
+            }
+            width: 20%;
+        }
+    }
+
+}
